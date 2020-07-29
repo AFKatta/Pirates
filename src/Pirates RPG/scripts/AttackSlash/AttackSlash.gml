@@ -1,4 +1,5 @@
-function AttackSlash(){
+function AttackSlash(){	
+	
 	//Attack just Started
 	if (sprite_index != spr_pirate_attack)
 	{
