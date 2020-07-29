@@ -16,6 +16,7 @@
     {"id":{"name":"spr_tiles_32x32_fixed","path":"sprites/spr_tiles_32x32_fixed/spr_tiles_32x32_fixed.yy",},"order":2,},
     {"id":{"name":"spr_ornament_tile","path":"sprites/spr_ornament_tile/spr_ornament_tile.yy",},"order":3,},
     {"id":{"name":"barrells_and_stuff_NOT_PROP","path":"sprites/barrells_and_stuff_NOT_PROP/barrells_and_stuff_NOT_PROP.yy",},"order":4,},
+    {"id":{"name":"obj_DayCicle","path":"objects/obj_DayCicle/obj_DayCicle.yy",},"order":8,},
     {"id":{"name":"spr_some_Interior","path":"sprites/spr_some_Interior/spr_some_Interior.yy",},"order":5,},
     {"id":{"name":"spr_sea_Stuff","path":"sprites/spr_sea_Stuff/spr_sea_Stuff.yy",},"order":6,},
     {"id":{"name":"spr_Signs","path":"sprites/spr_Signs/spr_Signs.yy",},"order":7,},
