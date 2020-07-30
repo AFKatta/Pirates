@@ -1,6 +1,5 @@
 {
   "resources": [
-    {"id":{"name":"obj_NPC_2","path":"objects/obj_NPC_2/obj_NPC_2.yy",},"order":7,},
     {"id":{"name":"spr_pirate_idle","path":"sprites/spr_pirate_idle/spr_pirate_idle.yy",},"order":0,},
     {"id":{"name":"spr_pirate_stop","path":"sprites/spr_pirate_stop/spr_pirate_stop.yy",},"order":1,},
     {"id":{"name":"spr_pirate_movement","path":"sprites/spr_pirate_movement/spr_pirate_movement.yy",},"order":2,},
@@ -29,7 +28,9 @@
     {"id":{"name":"spr_eyes_blue_male","path":"sprites/spr_eyes_blue_male/spr_eyes_blue_male.yy",},"order":7,},
     {"id":{"name":"spr_brown_shoes_male","path":"sprites/spr_brown_shoes_male/spr_brown_shoes_male.yy",},"order":1,},
     {"id":{"name":"spr_some_Interior","path":"sprites/spr_some_Interior/spr_some_Interior.yy",},"order":5,},
+    {"id":{"name":"spr_character_mask","path":"sprites/spr_character_mask/spr_character_mask.yy",},"order":15,},
     {"id":{"name":"spr_sea_Stuff","path":"sprites/spr_sea_Stuff/spr_sea_Stuff.yy",},"order":6,},
+    {"id":{"name":"DrawObjects","path":"scripts/DrawObjects/DrawObjects.yy",},"order":18,},
     {"id":{"name":"spr_Signs","path":"sprites/spr_Signs/spr_Signs.yy",},"order":7,},
     {"id":{"name":"spr_Interact_Signs","path":"sprites/spr_Interact_Signs/spr_Interact_Signs.yy",},"order":8,},
     {"id":{"name":"DropItem","path":"scripts/DropItem/DropItem.yy",},"order":15,},
@@ -60,6 +61,7 @@
     {"id":{"name":"spr_bangslong_brown_male","path":"sprites/spr_bangslong_brown_male/spr_bangslong_brown_male.yy",},"order":2,},
     {"id":{"name":"spr_bangslong_redhead_male","path":"sprites/spr_bangslong_redhead_male/spr_bangslong_redhead_male.yy",},"order":4,},
     {"id":{"name":"spr_bangslong_blonde_male","path":"sprites/spr_bangslong_blonde_male/spr_bangslong_blonde_male.yy",},"order":1,},
+    {"id":{"name":"obj_NPC_2","path":"objects/obj_NPC_2/obj_NPC_2.yy",},"order":7,},
     {"id":{"name":"spr_body_tanned_male","path":"sprites/spr_body_tanned_male/spr_body_tanned_male.yy",},"order":0,},
     {"id":{"name":"spr_shoes_black_male","path":"sprites/spr_shoes_black_male/spr_shoes_black_male.yy",},"order":0,},
     {"id":{"name":"PlayerStateFree","path":"scripts/PlayerStateFree/PlayerStateFree.yy",},"order":4,},
