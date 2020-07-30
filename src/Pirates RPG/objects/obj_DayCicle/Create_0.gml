@@ -8,11 +8,7 @@ day = 1;
 season = 1;
 year = 1;
 
-//Real Time
-// time_increment = 1/60 //seconds per step 
-
-//In Game Time
-time_increment = 50;
+time_increment = 1/60 //seconds per step
 
 darkness = 0;
 light_color = c_black;
