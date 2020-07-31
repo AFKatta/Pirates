@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function DrawObjects(argument0, argument1, argument2, argument3, argument4, argument5){
+function DrawObjects(argument0, argument1, argument2, argument3, argument4, argument5, argument6){
 	
 	var _direction = 0;
 	//x_offset =sprite_get_xoffset(mask_index);
@@ -36,6 +36,9 @@ function DrawObjects(argument0, argument1, argument2, argument3, argument4, argu
 	//DRAW SHIRT
 	draw_sprite_part(argument4, 0, 0, _direction, 64, 64, x, y);
 	
-	//DRAW HAIR
+	//DRAW EYES
 	draw_sprite_part(argument5, 0, 0, _direction, 64, 64, x, y);
+	
+	//DRAW HAIR
+	draw_sprite_part(argument6, 0, 0, _direction, 64, 64, x, y);
 }
