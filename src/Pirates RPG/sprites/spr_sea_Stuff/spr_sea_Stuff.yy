@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_sea_Stuff","path":"sprites/spr_sea_Stuff/spr_sea_Stuff.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_sea_Stuff",
     "tags": [],
     "resourceType": "GMSequence",
   },

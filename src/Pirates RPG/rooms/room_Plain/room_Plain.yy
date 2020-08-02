@@ -306,8 +306,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Unused",
+    "path": "folders/Rooms/Unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "room_Plain",

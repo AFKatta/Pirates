@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d1a6cfe-4cb3-488b-8efc-a1c8f6526f6e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sprites",
-    "path": "folders/Sprites/Tile Sprites.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Tile Sprites/Unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tiles_32x32_fixed",
