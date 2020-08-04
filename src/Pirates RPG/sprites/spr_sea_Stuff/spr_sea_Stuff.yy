@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d87a7a6d-5b8a-4bea-8293-72678ecc7522","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sprites",
-    "path": "folders/Sprites/Tile Sprites.yy",
+    "name": "Unused",
+    "path": "folders/Sprites/Tile Sprites/Unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sea_Stuff",

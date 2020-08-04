@@ -13,6 +13,8 @@ vSpeed = 0;
 speedWalk = 4.0;
 speedDigging = 0.5;
 
+animationEndScript = -1;
+
 spriteIdle = spr_pirate_stop;
 spriteWalk = spr_pirate_movement;
 spriteDig = spr_pirate_digging;

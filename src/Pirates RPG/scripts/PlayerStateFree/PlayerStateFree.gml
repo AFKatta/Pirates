@@ -1,10 +1,11 @@
 function PlayerStateFree() {
 	//Movement
+	//inputDirection take a value based on the angle he is going. 0 is right, 90 is up, 180 left, 270 down
 	hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
 	vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
 	PlayerCollision();
-
+	
 	//Update Sprite Index
 	var _oldSprite = sprite_index;
 	if (inputMagnitude != 0)
@@ -53,21 +54,25 @@ function PlayerStateFree() {
 			//Activate the AI Entity
 			with(activate) 
 			{
+			
+
+				
 			ScriptExecuteArray(entityActivateScript, entityActivateArgs);
 			}
 			//ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
 		
-			//Make an npc face the player
-			if (activate.entityNPC)
-			{
-				with(activate)
-				{
-					direction = point_direction(x,y,other.x,other.y);	
-					image_index = CARDINAL_DIR;
-				}
-			}
+			
 		}
 	
+				//Make an npc face the player
+				//if (activate.entityNPC)
+				//{
+				//	with(activate)
+				//	{
+				//		direction = point_direction(x,y,other.x,other.y);	
+				//		image_index = CARDINAL_DIR;
+				//	}
+				//}
 	
 	}
 	
