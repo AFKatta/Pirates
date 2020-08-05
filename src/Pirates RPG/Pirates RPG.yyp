@@ -117,6 +117,7 @@
     {"id":{"name":"obj_Plant2","path":"objects/obj_Plant2/obj_Plant2.yy",},"order":4,},
     {"id":{"name":"Room_Init","path":"rooms/Room_Init/Room_Init.yy",},"order":0,},
     {"id":{"name":"obj_Transition","path":"objects/obj_Transition/obj_Transition.yy",},"order":7,},
+    {"id":{"name":"spr_Col67","path":"sprites/spr_Col67/spr_Col67.yy",},"order":22,},
     {"id":{"name":"spr_bangs_blonde_male","path":"sprites/spr_bangs_blonde_male/spr_bangs_blonde_male.yy",},"order":0,},
     {"id":{"name":"room_Beach","path":"rooms/room_Beach/room_Beach.yy",},"order":1,},
     {"id":{"name":"room_Parent","path":"rooms/room_Parent/room_Parent.yy",},"order":2,},

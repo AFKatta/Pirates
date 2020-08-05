@@ -12,6 +12,7 @@ hSpeed = 0;
 vSpeed = 0;
 speedWalk = 4.0;
 speedDigging = 0.5;
+z = 0;
 
 animationEndScript = -1;
 

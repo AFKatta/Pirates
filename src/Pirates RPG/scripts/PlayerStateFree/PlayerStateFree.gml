@@ -53,11 +53,8 @@ function PlayerStateFree() {
 		{
 			//Activate the AI Entity
 			with(activate) 
-			{
-			
-
-				
-			ScriptExecuteArray(entityActivateScript, entityActivateArgs);
+			{		
+				ScriptExecuteArray(entityActivateScript, entityActivateArgs);
 			}
 			//ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
 		
@@ -67,15 +64,11 @@ function PlayerStateFree() {
 				//Make an npc face the player
 				//if (activate.entityNPC)
 				//{
-				//	with(activate)
-				//	{
 				//		direction = point_direction(x,y,other.x,other.y);	
 				//		image_index = CARDINAL_DIR;
-				//	}
+				//	
 				//}
 	
 	}
 	
-
-
 }

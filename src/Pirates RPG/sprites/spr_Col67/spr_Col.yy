@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_Col","path":"sprites/spr_Col/spr_Col.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_Col",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },
