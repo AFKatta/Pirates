@@ -34,7 +34,7 @@ if( keyboard_check_pressed(vk_enter))
 			with(obj_TextQueued) ticket --;
 		}
 		else{
-			with(obj_Pirate) state = lastState;
+			with(obj_Player) state = lastState;
 		}
 	}
 	else

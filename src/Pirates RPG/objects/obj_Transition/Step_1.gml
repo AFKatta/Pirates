@@ -1,7 +1,7 @@
 /// @desc Progress Transition
 // ><
 
-with (obj_Pirate) state = PlayerStateTransition;
+with (obj_Player) state = PlayerStateTransition;
 
 if (leading == OUT)
 {
@@ -17,7 +17,7 @@ else //leading == IN
 	percent = max(0, percent - TRANSITION_SPEED);
 	if (percent <= 0) //If screen fully revealed
 	{
-		with (obj_Pirate) state = PlayerStateFree;
+		with (obj_Player) state = PlayerStateFree;
 		instance_destroy();	
 	}	
 }

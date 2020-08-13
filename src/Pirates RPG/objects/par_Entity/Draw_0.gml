@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+var xx = x - x_offset;
+var yy = y - y_offset;
+
 if( flash != 0)
 {
 	shader_set(shWhiteFlash);
@@ -11,8 +15,8 @@ if( flash != 0)
 		draw_sprite_ext(
 			sprite_index,
 			image_index,
-			floor(x),
-			floor(y-z),
+			floor(xx),
+			floor(yy-z),
 			image_xscale,
 			image_yscale,
 			image_angle,
@@ -26,3 +30,5 @@ if( flash != 0)
 	}
 	
 if (shader_current() != -1) shader_reset();
+
+//draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true);

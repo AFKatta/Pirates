@@ -3,4 +3,7 @@
 z = 0;
 flash = 0;
 uFlash = shader_get_uniform(shWhiteFlash, "flash");
-lifted = 0;
+lifted = 0
+
+x_offset = sprite_get_xoffset(mask_index);
+y_offset = sprite_get_yoffset(mask_index);

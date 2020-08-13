@@ -72,7 +72,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_pirate_stop","path":"sprites/spr_pirate_stop/spr_pirate_stop.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_pirate_stop",
     "tags": [],
     "resourceType": "GMSequence",
   },

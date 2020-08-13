@@ -2,15 +2,15 @@
 if (!global.gamePaused)
 {
 	depth = -bbox_bottom;
-	if (lifted) && (instance_exists(obj_Pirate))
+	if (lifted) && (instance_exists(obj_Player))
 	{
-		if (obj_Pirate.sprite_index != spr_pirate_idle)
-		{
-		x = obj_Pirate.x;
-		y = obj_Pirate.y;
+		//if (obj_Pirate.sprite_index != spr_complete_character)
+		//{
+		x = obj_Player.x -28;
+		y = obj_Player.y -45;
 		z = 30;
-		depth = obj_Pirate.depth-1;
-		}
+		depth = obj_Player.depth-2;
+		//}
 	}
 	
 }

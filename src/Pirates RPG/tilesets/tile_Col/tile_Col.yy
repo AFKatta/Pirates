@@ -31,9 +31,18 @@
     "SerialiseFrameCount": 1,
   },
   "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
+    "SerialiseWidth": 2,
+    "SerialiseHeight": 4,
+    "TileSerialiseData": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
   },
   "parent": {
     "name": "Tile Sets",

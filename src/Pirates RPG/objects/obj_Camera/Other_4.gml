@@ -1,6 +1,6 @@
 /// @desc Update to player's new position
-if (instance_exists(obj_Pirate))
+if (instance_exists(obj_Player))
 {
-	x = obj_Pirate.x;
-	y = obj_Pirate.y;
+	x = obj_Player.x;
+	y = obj_Player.y;
 }

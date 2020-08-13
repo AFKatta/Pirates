@@ -3,19 +3,26 @@ function AttackSlash(){
 	//Attack just Started
 	if (sprite_index != spr_pirate_attack)
 	{
-		//Set up correct animation
-		sprite_index = spr_pirate_attack;
 		localFrame = 0;
 		image_index = 0;
+		//Set up correct animation
+		sprite_index = spr_pirate_attack;
+				
+	}
+	
+	
+	if(attackList = 1)
+	{
 		
 		//Clear hit list
+		
 		if(!ds_exists(hitByAttack, ds_type_list))
 		{
 			hitByAttack = ds_list_create();	
 		}		
 		ds_list_clear(hitByAttack);
-		
-	}
+		attackList = 0;
+	}	
 	
 	CalcAttack(spr_pirate_attack_HB);
 	//Update Sprite
@@ -50,5 +57,5 @@ function CalcAttack(argument0){
 		}
 	}
 	ds_list_destroy(hitByAttackNow);
-	mask_index = spr_pirate_idle;
+	//mask_index = spr_pirate_stop;
 }

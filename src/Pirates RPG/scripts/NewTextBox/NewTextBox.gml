@@ -2,7 +2,7 @@
 /// @arg Background
 /// @arg[Responses]
 function NewTextBox() {
-
+	
 	var _obj;
 	if (instance_exists(obj_Text))
 	{
@@ -37,7 +37,7 @@ function NewTextBox() {
 		}
 	}
 
-	with (obj_Pirate)
+	with (obj_Player)
 	{
 		if (state!= PlayerStateLocked)
 		{

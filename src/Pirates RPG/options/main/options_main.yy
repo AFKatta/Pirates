@@ -7,7 +7,7 @@
   "option_steam_app_id": "0",
   "option_sci_usesci": false,
   "option_author": "",
-  "option_lastchanged": "",
+  "option_lastchanged": "08 August 2020 22:32:13",
   "addon_amazon_apis": "",
   "addon_google_play_services": "",
   "option_spine_licence": false,
