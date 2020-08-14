@@ -37,6 +37,7 @@
     {"id":{"name":"spr_belt_leather_male","path":"sprites/spr_belt_leather_male/spr_belt_leather_male.yy",},"order":1,},
     {"id":{"name":"obj_DayCicle","path":"objects/obj_DayCicle/obj_DayCicle.yy",},"order":8,},
     {"id":{"name":"spr_eyes_blue_male","path":"sprites/spr_eyes_blue_male/spr_eyes_blue_male.yy",},"order":7,},
+    {"id":{"name":"PlayerThrow","path":"scripts/PlayerThrow/PlayerThrow.yy",},"order":22,},
     {"id":{"name":"spr_character_mask","path":"sprites/spr_character_mask/spr_character_mask.yy",},"order":19,},
     {"id":{"name":"spr_brown_shoes_male","path":"sprites/spr_brown_shoes_male/spr_brown_shoes_male.yy",},"order":1,},
     {"id":{"name":"spr_complete_character","path":"sprites/spr_complete_character/spr_complete_character.yy",},"order":16,},

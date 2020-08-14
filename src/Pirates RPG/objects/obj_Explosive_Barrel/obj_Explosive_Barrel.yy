@@ -28,6 +28,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"entityActivateScript","path":"objects/par_Entity/par_Entity.yy",},"objectId":{"name":"par_Entity","path":"objects/par_Entity/par_Entity.yy",},"value":"ActivateLiftable","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"entityHitScript","path":"objects/par_Entity/par_Entity.yy",},"objectId":{"name":"par_Entity","path":"objects/par_Entity/par_Entity.yy",},"value":"EntityHitSolid","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entityActivateArgs","path":"objects/par_Entity/par_Entity.yy",},"objectId":{"name":"par_Entity","path":"objects/par_Entity/par_Entity.yy",},"value":"[id]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

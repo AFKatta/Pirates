@@ -17,11 +17,12 @@ function PlayerStateFree() {
 
 	//Update Sprite Index
 	//var _oldSprite = sprite_index;
-	//if (inputMagnitude != 0)
-	//{
+	if (inputMagnitude != 0)
+	{
 	direction = inputDirection;
 	//	sprite_index = spriteWalk;
-	//} else sprite_index = spriteIdle;
+	} 
+	//else sprite_index = spriteIdle;
 	//if (_oldSprite != sprite_index) localFrame = 0;
 	//
 	////Update Image Index
@@ -45,6 +46,7 @@ function PlayerStateFree() {
 	//Activate Key logic
 	if (keyActivate)
 	{
+
 		animationStart = 1;
 		state = PlayerStateAct;
 		//1. Check for an entity to activate
@@ -69,6 +71,10 @@ function PlayerStateFree() {
 	
 		if (activate == noone or activate.entityActivateScript == -1)
 		{
+			if (global.iLifted != noone)
+			{
+				PlayerThrow();	
+			}
 			state = PlayerStateFree;
 			animationStart = 0;
 			//state = PlayerStateRoll; //Still to implement
@@ -77,25 +83,22 @@ function PlayerStateFree() {
 		}
 		else
 		{
-			//Activate the AI Entity
-			
-			with(activate) 
-			{		
-				ScriptExecuteArray(entityActivateScript, entityActivateArgs);
+
+			//Activate the AI Entity		
+			with(activate)
+			{
+			ScriptExecuteArray(entityActivateScript, entityActivateArgs);
 			}
 			//ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
-		
 			
+			if (activate.entityNPC)
+			{
+				with(activate)
+				{
+					direction = point_direction(x,y,other.x,other.y);
+					image_index = CARDINAL_DIR;
+				}
+			}			
 		}
-	
-				//Make an npc face the player
-				//if (activate.entityNPC)
-				//{
-				//		direction = point_direction(x,y,other.x,other.y);	
-				//		image_index = CARDINAL_DIR;
-				//	
-				//}
-	
 	}
-	
 }
