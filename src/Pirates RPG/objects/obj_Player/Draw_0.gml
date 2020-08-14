@@ -71,10 +71,15 @@ else if(state = PlayerStateAct)
 			else				x_frame = 4;	
 		}
 	}
+	else
+	{
+		state = PlayerStateFree;	
+	}
+
 }
 else 
 {
-	x_frame = 1;
+	x_frame = 0;
 	y_frame = y_frame_direction;
 }
 

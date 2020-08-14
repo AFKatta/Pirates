@@ -46,7 +46,6 @@ function PlayerStateFree() {
 	//Activate Key logic
 	if (keyActivate)
 	{
-
 		animationStart = 1;
 		state = PlayerStateAct;
 		//1. Check for an entity to activate
@@ -87,7 +86,7 @@ function PlayerStateFree() {
 			//Activate the AI Entity		
 			with(activate)
 			{
-			ScriptExecuteArray(entityActivateScript, entityActivateArgs);
+				ScriptExecuteArray(entityActivateScript, entityActivateArgs);
 			}
 			//ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
 			

@@ -62,18 +62,10 @@ with(obj_Pirate)
 /// @arg id
 function ActivateLiftable(){
 	
-	//var _random = argument0;
-	//var _random1 = argument[1];
-	//var _random2 = argument[2];
-	//var _random3 = argument[3];
-	//var _random4 = argument[4];
-	//var _liftAnimation = 2;
-	
 	//state = PlayerStateLifting;
 
 	if (global.iLifted == noone)
 	{
-		state = PlayerStateAct;
 	//with(obj_Pirate)
 	//{
 	//	sprite_index = spr_complete_character; 
