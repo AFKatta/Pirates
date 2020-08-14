@@ -12,7 +12,7 @@ spr_bandana = spr_bandana_red;
 spr_belt	= spr_belt_white_cloath_male;
 spr_attack_slash_animation = spr_animation_saber;
 
-attackAnimationStart = 0;
+animationStart = 0;
 attackList = 0;
 anim_speed = 12;
 anim_length = 9;
@@ -22,7 +22,9 @@ y_frame_direction = 0;
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
-isattacking = 0;
+isAttacking = 0;
+isDoing = 0;
+hasLifted = 0;
 
 speedWalk = 2.0;
 speedNormal = 3.0;
@@ -43,7 +45,6 @@ image_speed = 0;
 z = 0;
 
 animationEndScript = -1;
-
 
 if (global.targetX != -1)
 {

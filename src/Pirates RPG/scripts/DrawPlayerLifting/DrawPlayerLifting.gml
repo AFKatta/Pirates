@@ -73,6 +73,7 @@ function ActivateLiftable(){
 
 	if (global.iLifted == noone)
 	{
+		state = PlayerStateAct;
 	//with(obj_Pirate)
 	//{
 	//	sprite_index = spr_complete_character; 

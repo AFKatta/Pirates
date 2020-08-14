@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 //UPDATE INPUT
+if (state = PlayerStateFree or state = PlayerStateTransition){
 input_left	= keyboard_check(vk_left);
 input_right = keyboard_check(vk_right);
 input_up    = keyboard_check(vk_up);
@@ -13,6 +14,7 @@ keyDig = keyboard_check_pressed(ord("D"));
 keyAttack = keyboard_check_pressed(ord("A"));
 keyDash = keyboard_check_pressed(ord("S"));
 keyItem = keyboard_check_pressed(vk_alt);
+}
 
 inputDirection = point_direction(0,0,input_right-input_left,input_down-input_up);
 inputMagnitude = (input_right - input_left != 0) || (input_down - input_up != 0);

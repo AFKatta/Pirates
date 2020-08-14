@@ -31,7 +31,7 @@ function PlayerStateFree() {
 	if (keyAttack)
 	{
 		attackList = 1;
-		attackAnimationStart = 1;
+		animationStart = 1;
 		state = PlayerStateAttack;
 		stateAttack = AttackSlash;		
 	}
@@ -45,6 +45,8 @@ function PlayerStateFree() {
 	//Activate Key logic
 	if (keyActivate)
 	{
+		animationStart = 1;
+		state = PlayerStateAct;
 		//1. Check for an entity to activate
 		//2. If there is nothing, or there is something, but it has no script
 		//3. Otherwise, there is something and it has a script, Activate!
@@ -52,9 +54,13 @@ function PlayerStateFree() {
 		
 		var _distanceActivate = 0;
 		
-		if(direction == 90 or direction == 270)
+		if(direction == 270)
 		{
 			_distanceActivate = 20;	
+		}
+		else if(direction == 90)
+		{
+			_distanceActivate = 40;	
 		}
 		
 		var _activateX = lengthdir_x(40 + _distanceActivate, direction);
@@ -63,6 +69,8 @@ function PlayerStateFree() {
 	
 		if (activate == noone or activate.entityActivateScript == -1)
 		{
+			state = PlayerStateFree;
+			animationStart = 0;
 			//state = PlayerStateRoll; //Still to implement
 			//moveDistanceRemaining = distanceRoll;
 			message = "Ciao!";
@@ -70,6 +78,7 @@ function PlayerStateFree() {
 		else
 		{
 			//Activate the AI Entity
+			
 			with(activate) 
 			{		
 				ScriptExecuteArray(entityActivateScript, entityActivateArgs);

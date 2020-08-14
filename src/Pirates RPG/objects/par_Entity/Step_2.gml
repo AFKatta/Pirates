@@ -2,7 +2,7 @@
 if (!global.gamePaused)
 {
 	depth = -bbox_bottom;
-	if (lifted) && (instance_exists(obj_Player))
+	if (lifted) && (instance_exists(obj_Player) && obj_Player.hasLifted = 1)
 	{
 		//if (obj_Pirate.sprite_index != spr_complete_character)
 		//{

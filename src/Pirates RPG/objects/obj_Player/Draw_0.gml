@@ -4,6 +4,8 @@
 var xx = x - 36;
 var yy = y - 58;
 
+//	-------------------	SPRITE SELECTION BASED ON ANIMATION -------------------
+
 if (state = PlayerStateFree)
 {
 anim_length = 9;
@@ -17,14 +19,14 @@ else				x_frame = 0;
 y_frame_direction = y_frame;
 
 }
-else
+else if(state=PlayerStateAttack)
 {
 	
-	if(attackAnimationStart = 1)
+	if(animationStart = 1)
 	{ 
 		x_frame = 0;
-		attackAnimationStart = 0;
-		isattacking = 1;
+		animationStart = 0;
+		isAttacking = 1;
 	}
 	
 	anim_length = 6;
@@ -42,6 +44,39 @@ else
 		else				x_frame = 0;	
 	}
 }
+else if(state = PlayerStateAct)
+{
+	if(global.iLifted!=noone)
+	{
+		
+		if(animationStart = 1)
+		{	 
+			x_frame = 4;
+			animationStart = 0;
+			isDoing = 1;
+		}
+		
+		anim_length = 6;
+		anim_speed = 12;
+		
+		if(hSpeed == 0 and vSpeed == 0)
+		{
+			y_frame = y_frame_direction - 4;
+		}else
+		{
+			if	   (hSpeed < 0) y_frame = 5;
+			else if(hSpeed > 0) y_frame = 7;	
+			else if(vSpeed < 0) y_frame = 4;
+			else if(vSpeed > 0) y_frame = 6;
+			else				x_frame = 4;	
+		}
+	}
+}
+else 
+{
+	x_frame = 1;
+	y_frame = y_frame_direction;
+}
 
 //INCREMENT FRAME FOR ANIMATION
 if(x_frame + (anim_speed/FRAME_RATE) < anim_length)
@@ -51,14 +86,25 @@ x_frame += anim_speed/FRAME_RATE;
 else
 {
 	x_frame = 1;
-	if (isattacking = 1)
+	if (isAttacking = 1)
 	{
 		y_frame -= 4;
 		y_frame_direction -=4;
-		isattacking = 0;
+		isAttacking = 0;
 		attackList = 0;
 	}
+	else if(isDoing = 1)
+	{
+		y_frame += 4;
+		y_frame_direction +=4;
+		isDoing = 0;
+		hasLifted = 1;
+		x_frame = 0;
+		state = PlayerStateFree;
+	}
 }
+
+//	-------------------	START OF THE DRAWINGS -------------------	
 
 //DRAW CHARACTER BODY
 draw_sprite_part(spr_body, 0, floor(x_frame)*FRAME_SIZE, y_frame*FRAME_SIZE, FRAME_SIZE, FRAME_SIZE, xx, yy);
