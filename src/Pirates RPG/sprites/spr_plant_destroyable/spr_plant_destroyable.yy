@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49f5720c-296a-40af-966a-a2f75060530d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sprites",
-    "path": "folders/Sprites/Tile Sprites.yy",
+    "name": "Object Sprites",
+    "path": "folders/Sprites/Object Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_plant_destroyable",

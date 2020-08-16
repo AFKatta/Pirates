@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7aee61fe-fdbe-445c-a60d-1332ed98df43","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sprites",
-    "path": "folders/Sprites/Tile Sprites.yy",
+    "name": "Object Sprites",
+    "path": "folders/Sprites/Object Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_Textbox",

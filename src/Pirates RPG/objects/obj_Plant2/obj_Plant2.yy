@@ -31,8 +31,8 @@
     {"propertyId":{"name":"entityFragment","path":"objects/par_Entity/par_Entity.yy",},"objectId":{"name":"par_Entity","path":"objects/par_Entity/par_Entity.yy",},"value":"obj_Fragment_Plant","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactive Objects",
+    "path": "folders/Objects/Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_Plant2",

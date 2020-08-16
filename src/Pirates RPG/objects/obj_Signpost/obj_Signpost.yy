@@ -29,8 +29,8 @@
     {"propertyId":{"name":"entityCollision","path":"objects/par_Entity/par_Entity.yy",},"objectId":{"name":"par_Entity","path":"objects/par_Entity/par_Entity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactive Objects",
+    "path": "folders/Objects/Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_Signpost",

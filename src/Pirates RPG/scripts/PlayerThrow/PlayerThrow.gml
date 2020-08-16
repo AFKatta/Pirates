@@ -8,8 +8,8 @@ function PlayerThrow(){
 		persistent = false;
 		thrown = true;
 		z = 30;
-		throwPeakHeight = z+20;
-		throwDistance = 208//global.iLifted.entityThrowDistance;
+		throwPeakHeight = z+30;
+		throwDistance = global.iLifted.entityThrowDistance;
 		throwDistanceTravelled = 0;
 		throwStartPercent = (z/throwPeakHeight) * 0.5;
 		throwPercent = throwStartPercent;

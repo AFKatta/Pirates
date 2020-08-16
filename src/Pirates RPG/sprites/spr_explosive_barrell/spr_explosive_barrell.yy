@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"227b4218-e2c2-45dd-91e1-c0e16d246fa8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Tile Sprites",
-    "path": "folders/Sprites/Tile Sprites.yy",
+    "name": "Object Sprites",
+    "path": "folders/Sprites/Object Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_explosive_barrell",
