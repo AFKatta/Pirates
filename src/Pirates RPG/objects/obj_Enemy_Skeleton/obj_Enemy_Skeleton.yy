@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_Enemy_Skeleton_base_walking_old",
-    "path": "sprites/spr_Enemy_Skeleton_base_walking_old/spr_Enemy_Skeleton_base_walking_old.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -25,9 +22,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_Enemy_Skeleton","path":"objects/obj_Enemy_Skeleton/obj_Enemy_Skeleton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":3,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_Enemy_Skeleton","path":"objects/obj_Enemy_Skeleton/obj_Enemy_Skeleton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"enemyHP","path":"objects/par_Enemy/par_Enemy.yy",},"objectId":{"name":"par_Enemy","path":"objects/par_Enemy/par_Enemy.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Enemies",
     "path": "folders/Objects/Enemies.yy",

@@ -26,9 +26,24 @@ isAttacking = 0;
 isDoing = 0;
 hasLifted = 0;
 
+flash = 0;
+flashShader = 0;
+lockPlayer = 1;
+invulnerable = 0;
+adjustDistance = 6;
+
+distanceBonk = 60;
+distanceBonkHeight = 12;
+speedBonk = 1.5;
 speedWalk = 2.0;
 speedNormal = 3.0;
 speedRun = 4.0;
+speedHook = 3.0;
+distanceHook = 88;
+hook = 0;
+hookX = 0;
+hookY = 0;
+//hookSize = sprize_get_width(sHookChain);
 spd = speedNormal;
 
 hSpeed = 0;
@@ -45,10 +60,18 @@ image_speed = 0;
 z = 0;
 
 animationEndScript = -1;
+animationEnd = 0;
 
 if (global.targetX != -1)
 {
 	x = global.targetX;
-	y = global.targetY;
-	direction = global.targetDirection;
 }
+if (global.targetY != -1)
+{
+	y = global.targetY;
+}
+if (global.targetDirection != -1)
+{
+direction = global.targetDirection;
+}
+

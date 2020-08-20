@@ -95,5 +95,14 @@ function SkeletonChase(){
 		//Collide & Move
 		EnemyTileCollision();
 	}
+	if (instance_exists(target) && (point_distance(x, y, target.x, target.y) <= enemyAttackRadius))
+	{
+		state = ENEMYSTATE.ATTACK;
+		sprite_index = sprAttack;
+		image_index = 0;
+		image_speed = 1;
+		//xTo += lengthdir_x(20, dir);
+		//yTo += lengthdir_y(20, dir);
+	}
 	
 }

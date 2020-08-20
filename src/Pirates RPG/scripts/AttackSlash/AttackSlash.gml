@@ -51,7 +51,9 @@ function CalcAttack(argument0){
 				ds_list_add(hitByAttack, hitID);
 				with (hitID)
 				{
-					if(entityHitScript != -1) script_execute(entityHitScript);	
+					if (object_is_ancestor(object_index, par_Enemy) || object_is_ancestor(object_index, obj_Player))
+                    HurtEnemy(id, 5, other.id, 10);
+					else if(entityHitScript != -1) script_execute(entityHitScript);	
 				}
 			}
 		}
