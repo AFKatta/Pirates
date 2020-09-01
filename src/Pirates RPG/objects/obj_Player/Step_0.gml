@@ -28,6 +28,55 @@ if ( input_walk or input_run)
 	spd = speedNormal;
 }
 
+    if lockPlayer
+    {
+        other.inputMagnitude = 0
+        other.keyActivate = 0
+    }
+    switch state
+    {
+        case 0:
+            PlayerStateFree();
+            break;
+        case 5:
+            PlayerStateAct();
+            break;
+        case 1:
+			PlayerStateAttack();
+            //script_execute(attackScript[stateAttack])
+            break;
+        case 4:
+            PlayerStateRoll();
+            break;
+        case 3:
+            PlayerStateBonk();
+            break;
+        case 6:
+            PlayerStateHurt();
+            break;
+        case 8:
+            PlayerStateHook();
+            break;
+        case 7:
+            PlayerStateDead();
+            break;
+    }
+
+	if ((state != PlayerStateAttack) && ds_exists(hitByAttack, 2))
+	{
+        ds_list_destroy(hitByAttack);
+	}
+    if (state == PlayerStateDead)
+	{
+        depth = (-room_height);
+	}
+    else
+    { 
+		depth = (-bbox_bottom);
+		flash = max((flash - 0.05), 0);
+		invulnerable = max((invulnerable - 1), 0);
+	}
+	
 //RESET MOVE VARIABLES
 hSpeed = 0;
 vSpeed = 0;

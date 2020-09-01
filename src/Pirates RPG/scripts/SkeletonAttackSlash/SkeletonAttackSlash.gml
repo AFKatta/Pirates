@@ -20,7 +20,7 @@ function SkeletonAttackSlash(){
 	        image_xscale = sign(hSpeed);
 	    if (EnemyTileCollision() == 1)
 	    {
-			HurtPlayer();
+			//HurtPlayer();
 	        xTo = x;
 	        yTo = y;
 	    }

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "PlayerStates",
-    "path": "folders/Scripts/PlayerStates.yy",
+    "name": "Managers",
+    "path": "folders/Scripts/Managers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "HurtEnemy",
+  "name": "SlideTransition",
   "tags": [],
   "resourceType": "GMScript",
 }

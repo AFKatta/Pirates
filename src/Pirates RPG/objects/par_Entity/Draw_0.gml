@@ -4,6 +4,14 @@
 var xx = x - x_offset;
 var yy = y - y_offset;
 
+if (entityCastShadow)
+{
+    draw_set_color(c_black);
+    draw_set_alpha(0.15);
+    draw_ellipse(floor((x - ((sprite_width / 2) * entityShadowWidthMod))), floor((y - ((sprite_height / 4) * entityShadowHeightMod))), floor((x + ((sprite_width / 2) * entityShadowWidthMod))), floor((y + ((sprite_height / 4) * entityShadowHeightMod))), 0);
+    draw_set_alpha(1);
+}
+
 if( flash != 0)
 {
 	shader_set(shWhiteFlash);

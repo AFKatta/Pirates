@@ -12,6 +12,8 @@ spr_bandana = spr_bandana_red;
 spr_belt	= spr_belt_white_cloath_male;
 spr_attack_slash_animation = spr_animation_saber;
 
+PlayerHealth = 3;
+
 animationStart = 0;
 attackList = 0;
 anim_speed = 12;
@@ -27,14 +29,14 @@ isDoing = 0;
 hasLifted = 0;
 
 flash = 0;
-flashShader = 0;
+flashShader = 1;
 lockPlayer = 1;
 invulnerable = 0;
 adjustDistance = 6;
 
-distanceBonk = 60;
-distanceBonkHeight = 12;
-speedBonk = 1.5;
+distanceBonk = 120;
+distanceBonkHeight = 60;
+speedBonk = 3;
 speedWalk = 2.0;
 speedNormal = 3.0;
 speedRun = 4.0;

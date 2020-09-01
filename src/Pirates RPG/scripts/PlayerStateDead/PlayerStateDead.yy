@@ -6,7 +6,7 @@
     "path": "folders/Scripts/PlayerStates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "HurtEnemy",
+  "name": "PlayerStateDead",
   "tags": [],
   "resourceType": "GMScript",
 }

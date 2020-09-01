@@ -1,7 +1,7 @@
 /// @description Entity Loop
 if (!global.gamePaused)
 {
-	depth = -bbox_bottom;
+	//depth = -bbox_bottom;
 	if (lifted) && (instance_exists(obj_Player) && obj_Player.hasLifted = 1)
 	{
 		//if (obj_Pirate.sprite_index != spr_complete_character)
@@ -9,7 +9,7 @@ if (!global.gamePaused)
 		x = obj_Player.x -28;
 		y = obj_Player.y -45;
 		z = 30;
-		depth = obj_Player.depth-2;
+		depth = obj_Player.depth-20;
 		//}
 	}
 	
@@ -31,7 +31,26 @@ if (!global.gamePaused)
 			z = throwPeakHeight * sin(throwPercent * pi);
 			if(throwDistance == throwDistanceTravelled)
 			{
-				thrown = false;
+				thrown = false;		
+				var _entityList = ds_list_create();
+				var _entityCount = instance_place_list(x, y, 5, _entityList, 0);
+				var _entity = noone;
+				while (_entityCount > 0)
+				{
+				    _entity = ds_list_find_value(_entityList, 0);
+				    with (_entity)
+				    {
+				        if object_is_ancestor(object_index, par_Enemy)
+				            {
+							HurtEnemy(id, 5, other.id, 5);
+							}
+				        else if (entityHitScript != -1)
+				            script_execute(entityHitScript);
+				    }
+				    ds_list_delete(_entityList, 0);
+				    _entityCount--;
+				}
+				ds_list_destroy(_entityList);
 				if(entityThrowBreak) instance_destroy();
 			}
 		}
@@ -50,7 +69,8 @@ if (!global.gamePaused)
 			}
 		}
 	}
-	
+	flash = max( flash-0.03, 0);
+	//depth = (-y);
 }
 
-flash = max( flash-0.03, 0);
+//flash = max( flash-0.03, 0);

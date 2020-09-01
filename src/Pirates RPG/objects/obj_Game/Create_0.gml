@@ -29,7 +29,7 @@ global.targetDirection = -1;
 global.iLifted = -4;
 surface_resize(application_surface, 1366, 768);
 display_set_gui_size(1366, 768);
-//global.iTransition = instance_create_depth(0, 0, (depth - 1), obj_Transition);
+global.iTransition = instance_create_depth(0, 0, (depth - 1), obj_Transition);
 //global.iUI = instance_create_layer(0, 0, layer, oUI);
 gifRecord = 0;
 GUI = surface_create(1366, 768);

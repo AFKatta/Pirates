@@ -3,8 +3,8 @@
 function HurtPlayer(){
 	if (obj_Player.invulnerable <= 0)
 	{
-		global.playerHealth = max(0, (global.playerHealth - argument2));
-		if (global.playerHealth > 0)
+		obj_Player.PlayerHealth = max(0, (obj_Player.PlayerHealth - argument2));
+		if (obj_Player.PlayerHealth > 0)
 		{
 		    with (obj_Player)
 		    {
