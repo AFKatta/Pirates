@@ -13,7 +13,7 @@ function NewTextBox() {
 		_obj = obj_Text;
 	}
 	with (instance_create_layer(0,0,"Instances",_obj))
-
+	
 	{
 		message = argument[0];
 		if (instance_exists(other)) originInstance = other.id else originInstance = noone;
@@ -36,7 +36,7 @@ function NewTextBox() {
 			responseScripts = [-1];
 		}
 	}
-
+	
 	with (obj_Player)
 	{
 		if (state!= PlayerStateLocked)
